@@ -404,7 +404,7 @@ var simple = {
 
 var map = new mapboxgl.Map({
   container: 'map',
-  style: 'mapbox://styles/mapbox/streets-v8',
+  style: simple,
   zoom: 15,
   minZoom: 2,
   center: [38.9075, -77.0351]
@@ -416,13 +416,6 @@ if (window.self !== window.top) {
   document.documentElement.className += ' mapzen-demo-iframed';
 }
 
-// initialize mapzen bug
-var mzBug = new MapzenBug({
-  name: 'Maps using Mapbox-gl and vector PBF tiles',
-  link: 'https://github.com/mapzen/mapboxgl-vector-tiles',
-  tweet: 'Tangram map using @mapzen vector tiles and Mapbox GL!',
-  repo: 'https://github.com/mapzen/mapboxgl-vector-tiles/'
-});
 </script>
 
 </body>
